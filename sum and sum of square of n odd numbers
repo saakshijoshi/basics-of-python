@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled11.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMLlf0UHVXSfTGBPcSqB9k/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/saakshijoshi/basics-of-python/blob/main/sum%20and%20sum%20of%20square%20of%20n%20odd%20numbers\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vlQ_kMy7chxZ",
+        "outputId": "260bcef5-51c9-4087-803e-edab3ba7f054"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "100\n"
+          ]
+        }
+      ],
+      "source": [
+        "def sumofodd(n) :\n",
+        "  return n*n\n",
+        "n = 10\n",
+        "print(sumofodd(n))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "sum of first n=10 odd numbers\n"
+      ],
+      "metadata": {
+        "id": "ry966GIAd_0U"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "sum of square of first n natural numbers"
+      ],
+      "metadata": {
+        "id": "Z7K97DoKeZgk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def squaresum(n) :\n",
+        "  sm = 0\n",
+        "  for i in range(1, n+1) :\n",
+        "      sm += (2*i-1) *(2*i-1)\n",
+        "  return sm\n",
+        "n = 10\n",
+        "print(squaresum(10))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cyaiujHlrlg3",
+        "outputId": "c6114eda-815e-45a8-9ffb-ac3d3f2e1601"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1330\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
