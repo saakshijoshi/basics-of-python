@@ -1,0 +1,116 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyM2Fq/uqZW4P06SK/nJr2D4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/saakshijoshi/basics-of-python/blob/main/sum%20and%20sum%20of%20squares\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "o0E6lPFC_Xb2"
+      },
+      "outputs": [],
+      "source": [
+        " "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "write a program to calculate and print sum and sum of square of first n=10 natural numbers."
+      ],
+      "metadata": {
+        "id": "IWUuAS3RBG3J"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#sum \n",
+        "num = 10\n",
+        "if num < 0:\n",
+        "  print(\"Enter a positive number\")\n",
+        "else:\n",
+        "    sum = 0\n",
+        "    while(num > 0):\n",
+        "      sum += num \n",
+        "      num -= 1\n",
+        "    print(\"The sum is\",sum)      \n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-ghj9BrZBp17",
+        "outputId": "39483ae8-d112-486a-b130-95d7830f232a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The sum is 55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#sumofsquares\n",
+        "def squaresum(n) :\n",
+        "  sm = 0\n",
+        "  for i in range(1, n+1) :\n",
+        "    sm = sm + (i * i)\n",
+        "  return sm \n",
+        "  n = 10\n",
+        "print(squaresum(10)) \n",
+        "\n",
+        "  \n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a7uEVFSHIFNa",
+        "outputId": "e00e2bd7-576c-4c61-9b11-3ea4c0112dda"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "385\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
